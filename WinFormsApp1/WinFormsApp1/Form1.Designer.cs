@@ -1,5 +1,4 @@
-﻿
-namespace WinFormsApp1
+﻿namespace WinFormsApp1
 {
     partial class Form1
     {
@@ -47,7 +46,6 @@ namespace WinFormsApp1
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
@@ -57,6 +55,14 @@ namespace WinFormsApp1
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.standardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scientificToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtDisplay = new System.Windows.Forms.TextBox();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -67,7 +73,7 @@ namespace WinFormsApp1
             this.button1.TabIndex = 0;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button_Click);
+            this.button1.Click += new System.EventHandler(this.button_Click);
             // 
             // button2
             // 
@@ -77,7 +83,7 @@ namespace WinFormsApp1
             this.button2.TabIndex = 1;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button_Click);
+            this.button2.Click += new System.EventHandler(this.button_Click);
             // 
             // button3
             // 
@@ -87,7 +93,7 @@ namespace WinFormsApp1
             this.button3.TabIndex = 2;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button_Click);
+            this.button3.Click += new System.EventHandler(this.button_Click);
             // 
             // button4
             // 
@@ -97,6 +103,7 @@ namespace WinFormsApp1
             this.button4.TabIndex = 5;
             this.button4.Text = "6";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button_Click);
             // 
             // button5
             // 
@@ -106,6 +113,7 @@ namespace WinFormsApp1
             this.button5.TabIndex = 4;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button_Click);
             // 
             // button6
             // 
@@ -115,6 +123,7 @@ namespace WinFormsApp1
             this.button6.TabIndex = 3;
             this.button6.Text = "4";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button_Click);
             // 
             // button7
             // 
@@ -124,6 +133,7 @@ namespace WinFormsApp1
             this.button7.TabIndex = 8;
             this.button7.Text = "9";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button_Click);
             // 
             // button8
             // 
@@ -133,6 +143,7 @@ namespace WinFormsApp1
             this.button8.TabIndex = 7;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button_Click);
             // 
             // button9
             // 
@@ -142,6 +153,7 @@ namespace WinFormsApp1
             this.button9.TabIndex = 6;
             this.button9.Text = "7";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button_Click);
             // 
             // button10
             // 
@@ -151,6 +163,7 @@ namespace WinFormsApp1
             this.button10.TabIndex = 11;
             this.button10.Text = "+";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button_Click);
             // 
             // button11
             // 
@@ -160,6 +173,7 @@ namespace WinFormsApp1
             this.button11.TabIndex = 10;
             this.button11.Text = "0";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button_Click);
             // 
             // button12
             // 
@@ -169,6 +183,7 @@ namespace WinFormsApp1
             this.button12.TabIndex = 9;
             this.button12.Text = ".";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button_Click);
             // 
             // button13
             // 
@@ -178,7 +193,7 @@ namespace WinFormsApp1
             this.button13.TabIndex = 12;
             this.button13.Text = "=";
             this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.button13.Click += new System.EventHandler(this.button_Click);
             // 
             // button14
             // 
@@ -188,6 +203,7 @@ namespace WinFormsApp1
             this.button14.TabIndex = 13;
             this.button14.Text = "-";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button_Click);
             // 
             // button15
             // 
@@ -197,6 +213,7 @@ namespace WinFormsApp1
             this.button15.TabIndex = 14;
             this.button15.Text = "*";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button_Click);
             // 
             // button16
             // 
@@ -206,6 +223,7 @@ namespace WinFormsApp1
             this.button16.TabIndex = 15;
             this.button16.Text = "/";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button_Click);
             // 
             // button17
             // 
@@ -217,17 +235,6 @@ namespace WinFormsApp1
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(589, 59);
-            this.textBox1.TabIndex = 18;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox1.WordWrap = false;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // button18
             // 
             this.button18.Location = new System.Drawing.Point(312, 214);
@@ -236,6 +243,7 @@ namespace WinFormsApp1
             this.button18.TabIndex = 19;
             this.button18.Text = "CE";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button_Click);
             // 
             // button19
             // 
@@ -245,6 +253,7 @@ namespace WinFormsApp1
             this.button19.TabIndex = 27;
             this.button19.Text = "Exp";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button_Click);
             // 
             // button20
             // 
@@ -254,6 +263,7 @@ namespace WinFormsApp1
             this.button20.TabIndex = 26;
             this.button20.Text = "Hex";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button_Click);
             // 
             // button21
             // 
@@ -263,6 +273,7 @@ namespace WinFormsApp1
             this.button21.TabIndex = 25;
             this.button21.Text = "Log";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button_Click);
             // 
             // button22
             // 
@@ -272,6 +283,7 @@ namespace WinFormsApp1
             this.button22.TabIndex = 24;
             this.button22.Text = "Tan";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button_Click);
             // 
             // button23
             // 
@@ -281,6 +293,7 @@ namespace WinFormsApp1
             this.button23.TabIndex = 23;
             this.button23.Text = "Bin";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button_Click);
             // 
             // button24
             // 
@@ -290,6 +303,7 @@ namespace WinFormsApp1
             this.button24.TabIndex = 22;
             this.button24.Text = "Cos";
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button_Click);
             // 
             // button25
             // 
@@ -299,6 +313,7 @@ namespace WinFormsApp1
             this.button25.TabIndex = 21;
             this.button25.Text = "Mod";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button_Click);
             // 
             // button26
             // 
@@ -308,12 +323,71 @@ namespace WinFormsApp1
             this.button26.TabIndex = 20;
             this.button26.Text = "Sin";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.viewToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(611, 28);
+            this.menuStrip1.TabIndex = 29;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.standardToolStripMenuItem,
+            this.scientificToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // standardToolStripMenuItem
+            // 
+            this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
+            this.standardToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.standardToolStripMenuItem.Text = "Standard";
+            this.standardToolStripMenuItem.Click += new System.EventHandler(this.standardToolStripMenuItem_Click);
+            // 
+            // scientificToolStripMenuItem
+            // 
+            this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
+            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.scientificToolStripMenuItem.Text = "Scientific";
+            this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
+            this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.viewToolStripMenuItem.Text = "View";
+            // 
+            // txtDisplay
+            // 
+            this.txtDisplay.Location = new System.Drawing.Point(12, 27);
+            this.txtDisplay.Multiline = true;
+            this.txtDisplay.Name = "txtDisplay";
+            this.txtDisplay.Size = new System.Drawing.Size(589, 45);
+            this.txtDisplay.TabIndex = 30;
+            this.txtDisplay.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 262);
+            this.ClientSize = new System.Drawing.Size(611, 262);
+            this.Controls.Add(this.txtDisplay);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button21);
@@ -323,7 +397,6 @@ namespace WinFormsApp1
             this.Controls.Add(this.button25);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button18);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
@@ -341,17 +414,23 @@ namespace WinFormsApp1
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
+
+
 
         #endregion
 
@@ -372,7 +451,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
@@ -382,6 +460,13 @@ namespace WinFormsApp1
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem standardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scientificToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtDisplay;
     }
 }
 
