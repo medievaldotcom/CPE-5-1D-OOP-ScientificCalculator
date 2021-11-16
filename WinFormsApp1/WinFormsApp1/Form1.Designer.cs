@@ -62,6 +62,9 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtDisplay = new System.Windows.Forms.TextBox();
+            this.button27 = new System.Windows.Forms.Button();
+            this.lblShowOp = new System.Windows.Forms.Label();
+            this.button28 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -163,7 +166,7 @@
             this.button10.TabIndex = 11;
             this.button10.Text = "+";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button_Click);
+            this.button10.Click += new System.EventHandler(this.operators_click);
             // 
             // button11
             // 
@@ -193,7 +196,7 @@
             this.button13.TabIndex = 12;
             this.button13.Text = "=";
             this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button_Click);
+            this.button13.Click += new System.EventHandler(this.equals_click);
             // 
             // button14
             // 
@@ -203,7 +206,7 @@
             this.button14.TabIndex = 13;
             this.button14.Text = "-";
             this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button_Click);
+            this.button14.Click += new System.EventHandler(this.operators_click);
             // 
             // button15
             // 
@@ -213,7 +216,7 @@
             this.button15.TabIndex = 14;
             this.button15.Text = "*";
             this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button_Click);
+            this.button15.Click += new System.EventHandler(this.operators_click);
             // 
             // button16
             // 
@@ -223,7 +226,7 @@
             this.button16.TabIndex = 15;
             this.button16.Text = "/";
             this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button_Click);
+            this.button16.Click += new System.EventHandler(this.operators_click);
             // 
             // button17
             // 
@@ -233,7 +236,7 @@
             this.button17.TabIndex = 16;
             this.button17.Text = "C";
             this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button_Click);
+            this.button17.Click += new System.EventHandler(this.clear_text);
             // 
             // button18
             // 
@@ -243,7 +246,7 @@
             this.button18.TabIndex = 19;
             this.button18.Text = "CE";
             this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button_Click);
+            this.button18.Click += new System.EventHandler(this.clear_entry);
             // 
             // button19
             // 
@@ -253,7 +256,7 @@
             this.button19.TabIndex = 27;
             this.button19.Text = "Exp";
             this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button_Click);
+            this.button19.Click += new System.EventHandler(this.operators_click);
             // 
             // button20
             // 
@@ -313,7 +316,7 @@
             this.button25.TabIndex = 21;
             this.button25.Text = "Mod";
             this.button25.UseVisualStyleBackColor = true;
-            this.button25.Click += new System.EventHandler(this.button_Click);
+            this.button25.Click += new System.EventHandler(this.operators_click);
             // 
             // button26
             // 
@@ -378,15 +381,48 @@
             this.txtDisplay.Location = new System.Drawing.Point(12, 27);
             this.txtDisplay.Multiline = true;
             this.txtDisplay.Name = "txtDisplay";
+            this.txtDisplay.ReadOnly = true;
+            this.txtDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtDisplay.Size = new System.Drawing.Size(589, 45);
             this.txtDisplay.TabIndex = 30;
-            this.txtDisplay.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.txtDisplay.Text = "0";
+            this.txtDisplay.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button27
+            // 
+            this.button27.Location = new System.Drawing.Point(407, 214);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(94, 29);
+            this.button27.TabIndex = 31;
+            this.button27.Text = "<--";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.bckspce);
+            // 
+            // lblShowOp
+            // 
+            this.lblShowOp.AutoSize = true;
+            this.lblShowOp.Location = new System.Drawing.Point(12, 28);
+            this.lblShowOp.Name = "lblShowOp";
+            this.lblShowOp.Size = new System.Drawing.Size(0, 20);
+            this.lblShowOp.TabIndex = 32;
+            // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(507, 214);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(94, 29);
+            this.button28.TabIndex = 33;
+            this.button28.Text = "π";
+            this.button28.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 262);
+            this.Controls.Add(this.button28);
+            this.Controls.Add(this.lblShowOp);
+            this.Controls.Add(this.button27);
             this.Controls.Add(this.txtDisplay);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button20);
@@ -467,6 +503,9 @@
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.TextBox txtDisplay;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Label lblShowOp;
+        private System.Windows.Forms.Button button28;
     }
 }
 

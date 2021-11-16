@@ -54,11 +54,6 @@ namespace WinFormsApp1
             txtDisplay.Width = 386;
         }
 
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Width = 629;
@@ -67,7 +62,7 @@ namespace WinFormsApp1
 
         private void button_Click(object sender, EventArgs e)
         {
-            if ((txtDisplay.Text == " 0" || enter_value))
+            if ((txtDisplay.Text == "0" || enter_value))
                 txtDisplay.Text = "";
             enter_value = false;
             Button num = (Button)sender;
@@ -80,6 +75,71 @@ namespace WinFormsApp1
                 txtDisplay.Text = txtDisplay.Text + num.Text;
 
             }
+
+        private void clear_entry(object sender, EventArgs e)
+        {
+            txtDisplay.Text = "0";
+            lblShowOp.Text = "";
         }
+
+        private void clear_text(object sender, EventArgs e)
+        {
+            txtDisplay.Text = "0";
+            lblShowOp.Text = "";
+        }
+
+        private void bckspce(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text .Length  >0)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
+
+            }
+            if(txtDisplay.Text== "")
+                {
+                txtDisplay.Text = "0";
+            }
+        
+        }
+
+        private void operators_click(object sender, EventArgs e)
+        {
+            Button num = (Button)sender;
+            operation = num.Text;
+            results = Double.Parse(txtDisplay.Text);
+            txtDisplay.Text = "";
+            lblShowOp.Text = System.Convert.ToString(results) + " " + operation;
+        }
+
+        private void equals_click(object sender, EventArgs e)
+        {
+            lblShowOp.Text = "";
+            switch(operation)
+            {
+                case "+":
+                    txtDisplay.Text =( results + Double.Parse (txtDisplay.Text )).ToString();
+                    break;
+                case "-":
+                    txtDisplay.Text = (results - Double.Parse(txtDisplay.Text)).ToString();
+                    break;
+                case "*":
+                    txtDisplay.Text = (results * Double.Parse(txtDisplay.Text)).ToString();
+                    break;
+                case "/":
+                    txtDisplay.Text = (results / Double.Parse(txtDisplay.Text)).ToString();
+                    break;
+                case "Mod":
+                    txtDisplay.Text = (results % Double.Parse(txtDisplay.Text)).ToString();
+                    break;
+                case "Exp":
+                    double i = Double.Parse(txtDisplay.Text);
+                    double q;
+                    q = (results);
+                   txtDisplay.Text = Math.Exp (i * Math.Log(q*4)).ToString();
+                    break;
+            }
+
+        }
+    }
     }
 
