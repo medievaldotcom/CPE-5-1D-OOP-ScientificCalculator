@@ -60,7 +60,7 @@ namespace WinFormsApp1
             txtDisplay.Width = 589;
         }
 
-        private void button_Click(object sender, EventArgs e)
+        private void numbers_Click(object sender, EventArgs e)
         {
             if ((txtDisplay.Text == "0" || enter_value))
                 txtDisplay.Text = "";
@@ -139,6 +139,25 @@ namespace WinFormsApp1
                     break;
             }
 
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text = "3.14159265";
+
+        }
+
+        private void log_Click(object sender, EventArgs e)
+        {
+            double ilog = Double.Parse(txtDisplay.Text);
+            ilog = Math.Log10(ilog);
+            txtDisplay.Text = System.Convert.ToString(ilog);
+            lblShowOp.Text = System.Convert.ToString("log"+ "(" + Double.Parse(txtDisplay.Text)+ ")");
+        }
+
+        private void pi_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text = "3.14159265";
         }
     }
     }
