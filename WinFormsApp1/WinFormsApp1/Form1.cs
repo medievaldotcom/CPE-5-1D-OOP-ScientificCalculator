@@ -56,8 +56,8 @@ namespace WinFormsApp1
 
         private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Width = 629;
-            txtDisplay.Width = 589;
+            this.Width = 829;
+            txtDisplay.Width = 789;
         }
 
         private void numbers_Click(object sender, EventArgs e)
@@ -141,12 +141,6 @@ namespace WinFormsApp1
 
         }
 
-        private void button28_Click(object sender, EventArgs e)
-        {
-            txtDisplay.Text = "3.14159265";
-
-        }
-
         private void log_Click(object sender, EventArgs e)
         {
             double ilog = Double.Parse(txtDisplay.Text);
@@ -158,6 +152,85 @@ namespace WinFormsApp1
         private void pi_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = "3.14159265";
+        }
+
+        private void Sqrt_click(object sender, EventArgs e)
+        {
+            double sq = Double.Parse(txtDisplay.Text);
+            lblShowOp.Text = System.Convert.ToString("sqrt" + "(" + (txtDisplay.Text) + ")");
+            sq = Math.Sqrt(sq);
+            txtDisplay.Text = System.Convert.ToString(sq);
+        }
+
+        private void sin_Click(object sender, EventArgs e)
+        {
+            double qSin = Double.Parse(txtDisplay.Text);
+            lblShowOp.Text = System.Convert.ToString("sin" + "(" + (txtDisplay.Text) + ")");
+            qSin = Math.Sin(qSin);
+            txtDisplay.Text = System.Convert.ToString(qSin);
+        }
+
+        private void cos_Click(object sender, EventArgs e)
+        {
+            double qCos = Double.Parse(txtDisplay.Text);
+            lblShowOp.Text = System.Convert.ToString("cos" + "(" + (txtDisplay.Text) + ")");
+            qCos = Math.Cos(qCos);
+            txtDisplay.Text = System.Convert.ToString(qCos);
+        }
+
+        private void tan_Click(object sender, EventArgs e)
+        {
+            double qTan = Double.Parse(txtDisplay.Text);
+            lblShowOp.Text = System.Convert.ToString("tan" + "(" + (txtDisplay.Text) + ")");
+            qTan = Math.Tan(qTan);
+            txtDisplay.Text = System.Convert.ToString(qTan);
+        }
+
+        private void sinh_Click(object sender, EventArgs e)
+        {
+            double qSinh = Double.Parse(txtDisplay.Text);
+            lblShowOp.Text = System.Convert.ToString("sinh" + "(" + (txtDisplay.Text) + ")");
+            qSinh = Math.Sinh(qSinh);
+            txtDisplay.Text = System.Convert.ToString(qSinh);
+        }
+
+        private void cosh_Click(object sender, EventArgs e)
+        {
+            double qCosh = Double.Parse(txtDisplay.Text);
+            lblShowOp.Text = System.Convert.ToString("cosh" + "(" + (txtDisplay.Text) + ")");
+            qCosh = Math.Cosh(qCosh);
+            txtDisplay.Text = System.Convert.ToString(qCosh);
+        }
+
+        private void tanh_Click(object sender, EventArgs e)
+        {
+            double qTanh = Double.Parse(txtDisplay.Text);
+            lblShowOp.Text = System.Convert.ToString("tanh" + "(" + (txtDisplay.Text) + ")");
+            qTanh = Math.Tanh(qTanh);
+            txtDisplay.Text = System.Convert.ToString(qTanh);
+        }
+
+        private void bin_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(txtDisplay.Text);
+            txtDisplay.Text = System.Convert.ToString(a,2);
+        }
+
+        private void dec_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(txtDisplay.Text);
+            txtDisplay.Text = System.Convert.ToString(a);
+        }
+
+        private void oct_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(txtDisplay.Text);
+            txtDisplay.Text = System.Convert.ToString(a, 8);
+        }
+
+        private void hex_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }
