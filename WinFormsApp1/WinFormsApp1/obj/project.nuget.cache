@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "X+XoKsA0hNT877wRSaducG7oVPVJmEsr+IW13EQVI15w4fmT4/vARSrP2z14oruklaqTgtjHUMCDOauK1BAqWA==",
+  "dgSpecHash": "lGBCRDLvkE9B89QKmRZJTmIHFsttA5NHALBGn2DXIfvxfjsLvAa5ODzfxPFQGHY7Wi6gkY9pvnDl3XiwO3XSKA==",
   "success": true,
-  "projectFilePath": "D:\\Github\\Repository\\CPE-5-1D-OOP-ScientificCalculator\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Adrian\\Documents\\GitHub\\CPE-5-1D-OOP-ScientificCalculator\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -33,20 +33,6 @@ namespace WinFormsApp1
 
         }
 
-        private void Button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button_click(object sender, EventArgs e)
-        {
-
-        }
 
         private void standardToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -114,10 +100,10 @@ namespace WinFormsApp1
         private void equals_click(object sender, EventArgs e)
         {
             lblShowOp.Text = "";
-            switch(operation)
+            switch (operation)
             {
                 case "+":
-                    txtDisplay.Text =( results + Double.Parse (txtDisplay.Text )).ToString();
+                    txtDisplay.Text = (results + Double.Parse(txtDisplay.Text)).ToString();
                     break;
                 case "-":
                     txtDisplay.Text = (results - Double.Parse(txtDisplay.Text)).ToString();
@@ -131,14 +117,18 @@ namespace WinFormsApp1
                 case "Mod":
                     txtDisplay.Text = (results % Double.Parse(txtDisplay.Text)).ToString();
                     break;
-                case "Exp":
-                    double i = Double.Parse(txtDisplay.Text);
-                    double q;
-                    q = (results);
-                   txtDisplay.Text = Math.Exp (i * Math.Log(q*4)).ToString();
+                case "x^y":
+                  
+                    double m = Double.Parse(txtDisplay.Text);
+                    double n = Double.Parse(txtDisplay.Text);
+                  
+                    txtDisplay.Text = Math.Pow(m, n).ToString();
                     break;
-            }
 
+
+
+
+            }
         }
 
         private void log_Click(object sender, EventArgs e)
@@ -230,7 +220,46 @@ namespace WinFormsApp1
 
         private void hex_Click(object sender, EventArgs e)
         {
+            int a = int.Parse(txtDisplay.Text);
+            txtDisplay.Text = System.Convert.ToString(a, 16);
+        }
 
+
+        private void btnx2_click(object sender, EventArgs e)
+        {
+            double a;
+            a = Convert.ToDouble(txtDisplay.Text) * Convert.ToDouble(txtDisplay.Text);
+            txtDisplay.Text = System.Convert.ToString(a);
+        }
+
+        private void btnx3_click(object sender, EventArgs e)
+        {
+            double a;
+            a = Convert.ToDouble(txtDisplay.Text) * Convert.ToDouble(txtDisplay.Text) * Convert.ToDouble(txtDisplay.Text); ;
+            txtDisplay.Text = System.Convert.ToString(a);
+        }
+
+        private void btn1x_click(object sender, EventArgs e)
+        {
+            double a;
+            a = Convert.ToDouble(1.0 /Convert.ToDouble(txtDisplay.Text));
+            txtDisplay.Text = System.Convert.ToString(a);
+        }
+        
+
+        private void percent_click(object sender, EventArgs e)
+        {
+            double a;
+            a = Convert.ToDouble(txtDisplay.Text) / Convert.ToDouble(100);
+            txtDisplay.Text = System.Convert.ToString(a);
+        }
+
+        private void btnlnx_click(object sender, EventArgs e)
+        {
+            double ilog = Double.Parse(txtDisplay.Text);
+            ilog = Math.Log(ilog);
+            txtDisplay.Text = System.Convert.ToString(ilog);
+            lblShowOp.Text = System.Convert.ToString("log" + "(" + (txtDisplay.Text) + ")");
         }
     }
     }
